@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bb2ac1f6-a0e0-46e1-9376-19244a42f976" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Source/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Source/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Source/style.css" afterDir="false" />
-    </list>
+    <list default="true" id="bb2ac1f6-a0e0-46e1-9376-19244a42f976" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -16,7 +13,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Source/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="600">
@@ -25,7 +22,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Source/style.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
@@ -134,12 +131,12 @@
       <updated>1567029495353</updated>
       <workItem from="1567029497544" duration="224000" />
       <workItem from="1567030274324" duration="2216000" />
-      <workItem from="1567037366383" duration="2607000" />
+      <workItem from="1567037366383" duration="3208000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5047000" />
+    <option name="totallyTimeSpent" value="5648000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="66" width="1680" height="903" extended-state="0" />
@@ -173,17 +170,17 @@
     <entry file="file://$PROJECT_DIR$/Documentation/HelloWorld_Program.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Source/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="40" column="33" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Source/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="40" column="33" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
         </state>
       </provider>
     </entry>
