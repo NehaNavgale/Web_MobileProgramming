@@ -13,3 +13,23 @@
 body {
     background-color: linen;
 }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    width: 210px;
+    height: 210px;
+    text-align: center;
+}
+.grid-item {
+    display: block;
+    width:70px;
+    height: 70px;
+    margin: 10px;
+}
+.textCenter {
+    align-content: center;
+    width: 100%;
+    display: block;
+}
