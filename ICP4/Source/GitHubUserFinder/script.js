@@ -32,27 +32,6 @@ function getGithubInfo(user) {
             // }
         }
     };
-
-    // xhttp.onreadystatechange = processRequest;
-    //
-    // function processRequest(e) {
-    //     console.log(xhttp.readyState);
-    //
-    //     if (xhttp.readyState == 4) {
-    //
-    //         if (xhttp.status == 200) {
-
-                // var response = JSON.parse(xhttp.responseText);
-                // //alert(response.ip);
-                // console.log(response);
-                // showUser(response);
-    //         }
-    //         else {
-    //             noSuchUser(username);
-    //         }
-    //     }
-    //
-    // }
 }
 
 function showUser(user) {

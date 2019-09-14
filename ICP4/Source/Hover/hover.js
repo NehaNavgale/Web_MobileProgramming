@@ -7,17 +7,16 @@ function upDate(previewPic) {
        to the alt text of the preview image
        */
 
-    var imageURL = previewPic.src;
-    var imgAttr = document.createElement("IMG");
-    imgAttr.setAttribute("id", "fillImage");
-    imgAttr.setAttribute("src", imageURL);
-    imgAttr.setAttribute("width", "600px");
-    // imgAttr.setAttribute("height", "450px");
-    imgAttr.setAttribute("alt", "The Pulpit Rock");
-    document.getElementById('image').innerHTML = "";
-
-    document.getElementById('image').appendChild(imgAttr);
-
+    // var imageURL = previewPic.src;
+    // var imageText = previewPic.alt;
+    // var imgAttr = document.createElement("IMG");
+    // imgAttr.setAttribute("id", "fillImage");
+    // imgAttr.setAttribute("src", imageURL);
+    // imgAttr.setAttribute("width", "600px");
+    // // imgAttr.setAttribute("height", "450px");
+    // imgAttr.setAttribute("alt", imageText);
+    document.getElementById('image').innerHTML = previewPic.alt;
+    document.getElementById('image').style.backgroundImage = "url('"+previewPic.src+"')";
 }
 
 function unDo() {
@@ -28,8 +27,9 @@ function unDo() {
    2) Change the text  of the div with the id = "image"
    back to the original text.  You can use the html code to see what that original text was
    */
-    var element = document.getElementById("fillImage");
-    element.parentNode.removeChild(element);
+    document.getElementById('image').style.backgroundImage = "";
+    // var element = document.getElementById("fillImage");
+    // element.parentNode.removeChild(element);
     document.getElementById('image').innerHTML = "Hover over an image below to display here.";
 
 }
