@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>To Do List</title>
+</head>
+<body class="text-white">
+<div class="container"  class="">
+  <div class="row">
+    <div class="col-12 text-center">
+      <h2>TO DO LIST FOR 2019</h2>
+    </div>
+  </div>
+  <!--code to create form for user to add new task-->
+  <form #addItem = "ngForm" (ngSubmit)="submitNewItem(addItem.value)">
+    <div class="form-group row text-center">
+      <div class="col-sm-4"></div>
+        <div class="col-sm-4 ">
+          <input type="text" class="form-control" style="height: 30px" name="taskName" ngModel/>
+        </div>
+      <div class="col-sm-1 float-left">
+      <button type="submit" class="btn btn-info">Add Task</button>
+      </div>
+    </div>
+  </form>
+  <!--Displaying pending items list-->
+  <div class="text-center"><h3>Pending Items List</h3></div>
+  <div class="row ">
+    <div class="col-sm-4"></div>
+    <div class="col-sm-4">
+      <!--check if there are pending items present-->
+      <div *ngIf="items.length > 0">
+        <div *ngFor="let item of items; let id = index">
+          <div class="ml-1 mr-1 row itemList border border-secondary" style="height: 25px">
+            <div class="col-sm-11" >
+              <div class="text-left" (click)="completeItem(item)">{{item}}</div>
+            </div>
+            <div class="col-sm-1 text-right">
+              <button (click)="deleteItem(item)"><i class="fa fa-trash"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--check if there are pending items are not present-->
+      <div class="itemList" *ngIf="items.length == 0">
+        <h4>No Pending items Found</h4>
+      </div>
+    </div>
+  </div>
+  <!--Displaying completed items list-->
+  <div class="text-center"><h3>Completed Items List</h3></div>
+  <div class="row ">
+    <div class="col-sm-4"></div>
+    <div class="col-sm-4">
+      <!--check if there are completed items are present-->
+      <div *ngIf="comItems.length > 0">
+        <div *ngFor="let comItem of comItems; let id = index">
+          <div class="row ml-1 mr-1  itemList border border-secondar">
+            <div class="col-sm-11">
+              <div class="text-left"><del>{{comItem}}</del></div>
+            </div>
+            <div class="col-sm-1 text-right">
+              <button (click)="deleteItem(comItem)"><i class="fa fa-trash"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--check if there are completed items are not present-->
+      <div class="itemList" *ngIf="comItems.length == 0">
+        <h4>No Completed items Found</h4>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
+  
