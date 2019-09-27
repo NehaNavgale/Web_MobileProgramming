@@ -1,0 +1,47 @@
+<div class="container">
+  <div class="row">
+    <div class="col-4 dp-flex">
+      <form autocomplete="off">
+        <div>
+          <a class="heading" href="/home">Student Portal</a>
+        </div>
+        <div class="form-group">
+          <h4> Sign up to Student Portal</h4>
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control form-control-lg" name="firstname" placeholder="First Name" [(ngModel)]="user.firstname">
+        </div>
+
+        <div class="form-group">
+          <input type="text" class="form-control form-control-lg"  name="lastname" placeholder="Last Name" [(ngModel)]="user.lastname">
+        </div>
+
+        <div class="form-group">
+          <input type="text" class="form-control form-control-lg" name="email" placeholder="Email Id" [(ngModel)]="user.email">
+        </div>
+
+        <div class="form-group">
+          <input type="text" class="form-control form-control-lg" name="studentId" placeholder="Student Id" [(ngModel)]="user.studentId">
+        </div>
+
+        <div class="form-group">
+          <input type="password" class="form-control form-control-lg"  name="password" placeholder="Password" [(ngModel)]="user.password">
+        </div>
+
+        <div class="form-group">
+          <input type="password" class="form-control form-control-lg"  name="cpassword" placeholder="Confirm Password" [(ngModel)]="user.cpassword">
+        </div>
+
+        <div class="form-group">
+          <button type="button" class="btn btn-success vipra-blue-button width-100" (click)="registerUser()">Register</button>
+        </div>
+        <div *ngIf="missingField" class="form-group">
+          <span style="color: red"> *All fields are required</span>
+        </div>
+        <div class="">
+          <a routerLink="/login" class="vipra-blue-text">Already signed up? Login Here</a>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

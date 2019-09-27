@@ -1,0 +1,771 @@
+.sidebar .sidebar-wrapper,
+.off-canvas-sidebar .sidebar-wrapper {
+  position: relative;
+  height: calc(100vh - 75px);
+  overflow: auto;
+  width: 260px;
+  z-index: 4;
+  padding-bottom: 100px;
+}
+
+.sidebar .sidebar-wrapper .dropdown .dropdown-backdrop,
+.off-canvas-sidebar .sidebar-wrapper .dropdown .dropdown-backdrop {
+  display: none !important;
+}
+
+.sidebar .sidebar-wrapper .navbar-form,
+.off-canvas-sidebar .sidebar-wrapper .navbar-form {
+  border: none;
+}
+
+.navbar .navbar-nav .nav-item.active .nav-link:not(.btn),
+.navbar .navbar-nav .nav-item .nav-link:not(.btn):focus,
+.navbar .navbar-nav .nav-item .nav-link:not(.btn):hover,
+.navbar .navbar-nav .nav-item .nav-link:not(.btn):active {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 0.1875rem;
+  color: #FFFFFF;
+}
+
+.navbar.bg-white:not(.navbar-transparent) .nav-item.active .nav-link:not(.btn),
+.navbar.bg-white:not(.navbar-transparent) .nav-item .nav-link:not(.btn):focus,
+.navbar.bg-white:not(.navbar-transparent) .nav-item .nav-link:not(.btn):hover,
+.navbar.bg-white:not(.navbar-transparent) .nav-item .nav-link:not(.btn):active {
+  background-color: rgba(222, 222, 222, 0.8);
+  color: #888;
+}
+
+
+.btn,
+.navbar .navbar-nav>a.btn {
+  border-width: 2px;
+  font-weight: 400;
+  font-size: 0.8571em;
+  line-height: 1.35em;
+  border: none;
+  margin: 10px 1px;
+  border-radius: 0.1875rem;
+  padding: 11px 22px;
+  cursor: pointer;
+  background-color: #888;
+  color: #FFFFFF;
+}
+
+.btn:hover,
+.btn:focus,
+.btn:not(:disabled):not(.disabled):active,
+.btn:not(:disabled):not(.disabled).active,
+.btn:not(:disabled):not(.disabled):active:focus,
+.btn:not(:disabled):not(.disabled).active:focus,
+.btn:active:hover,
+.btn.active:hover,
+.show>.btn.dropdown-toggle,
+.show>.btn.dropdown-toggle:focus,
+.show>.btn.dropdown-toggle:hover,
+.navbar .navbar-nav>a.btn:hover,
+.navbar .navbar-nav>a.btn:focus,
+.navbar .navbar-nav>a.btn:not(:disabled):not(.disabled):active,
+.navbar .navbar-nav>a.btn:not(:disabled):not(.disabled).active,
+.navbar .navbar-nav>a.btn:not(:disabled):not(.disabled):active:focus,
+.navbar .navbar-nav>a.btn:not(:disabled):not(.disabled).active:focus,
+.navbar .navbar-nav>a.btn:active:hover,
+.navbar .navbar-nav>a.btn.active:hover,
+.show>.navbar .navbar-nav>a.btn.dropdown-toggle,
+.show>.navbar .navbar-nav>a.btn.dropdown-toggle:focus,
+.show>.navbar .navbar-nav>a.btn.dropdown-toggle:hover {
+  background-color: #979797;
+  color: #FFFFFF;
+  box-shadow: none;
+}
+
+.btn:not([data-action]):hover,
+.navbar .navbar-nav>a.btn:not([data-action]):hover {
+  box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.17);
+}
+
+.btn.disabled,
+.btn.disabled:hover,
+.btn.disabled:focus,
+.btn.disabled.focus,
+.btn.disabled:active,
+.btn.disabled.active,
+.btn:disabled,
+.btn:disabled:hover,
+.btn:disabled:focus,
+.btn:disabled.focus,
+.btn:disabled:active,
+.btn:disabled.active,
+.btn[disabled],
+.btn[disabled]:hover,
+.btn[disabled]:focus,
+.btn[disabled].focus,
+.btn[disabled]:active,
+.btn[disabled].active,
+fieldset[disabled] .btn,
+fieldset[disabled] .btn:hover,
+fieldset[disabled] .btn:focus,
+fieldset[disabled] .btn.focus,
+fieldset[disabled] .btn:active,
+fieldset[disabled] .btn.active,
+.navbar .navbar-nav>a.btn.disabled,
+.navbar .navbar-nav>a.btn.disabled:hover,
+.navbar .navbar-nav>a.btn.disabled:focus,
+.navbar .navbar-nav>a.btn.disabled.focus,
+.navbar .navbar-nav>a.btn.disabled:active,
+.navbar .navbar-nav>a.btn.disabled.active,
+.navbar .navbar-nav>a.btn:disabled,
+.navbar .navbar-nav>a.btn:disabled:hover,
+.navbar .navbar-nav>a.btn:disabled:focus,
+.navbar .navbar-nav>a.btn:disabled.focus,
+.navbar .navbar-nav>a.btn:disabled:active,
+.navbar .navbar-nav>a.btn:disabled.active,
+.navbar .navbar-nav>a.btn[disabled],
+.navbar .navbar-nav>a.btn[disabled]:hover,
+.navbar .navbar-nav>a.btn[disabled]:focus,
+.navbar .navbar-nav>a.btn[disabled].focus,
+.navbar .navbar-nav>a.btn[disabled]:active,
+.navbar .navbar-nav>a.btn[disabled].active,
+fieldset[disabled] .navbar .navbar-nav>a.btn,
+fieldset[disabled] .navbar .navbar-nav>a.btn:hover,
+fieldset[disabled] .navbar .navbar-nav>a.btn:focus,
+fieldset[disabled] .navbar .navbar-nav>a.btn.focus,
+fieldset[disabled] .navbar .navbar-nav>a.btn:active,
+fieldset[disabled] .navbar .navbar-nav>a.btn.active {
+  background-color: #888;
+  border-color: #888;
+}
+
+.btn.btn-simple,
+.navbar .navbar-nav>a.btn.btn-simple {
+  color: #888;
+  border-color: #888;
+}
+
+.btn.btn-simple:hover,
+.btn.btn-simple:focus,
+.btn.btn-simple:active,
+.navbar .navbar-nav>a.btn.btn-simple:hover,
+.navbar .navbar-nav>a.btn.btn-simple:focus,
+.navbar .navbar-nav>a.btn.btn-simple:active {
+  background-color: transparent;
+  color: #979797;
+  border-color: #979797;
+  box-shadow: none;
+}
+
+.btn.btn-link,
+.navbar .navbar-nav>a.btn.btn-link {
+  color: #888;
+}
+
+.btn.btn-link:hover,
+.btn.btn-link:focus,
+.btn.btn-link:active,
+.navbar .navbar-nav>a.btn.btn-link:hover,
+.navbar .navbar-nav>a.btn.btn-link:focus,
+.navbar .navbar-nav>a.btn.btn-link:active {
+  background-color: transparent;
+  color: #979797;
+  text-decoration: none;
+  box-shadow: none;
+}
+
+.btn:hover,
+.btn:focus,
+.navbar .navbar-nav>a.btn:hover,
+.navbar .navbar-nav>a.btn:focus {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  outline: 0 !important;
+}
+
+.btn:active,
+.btn.active,
+.open>.btn.dropdown-toggle,
+.navbar .navbar-nav>a.btn:active,
+.navbar .navbar-nav>a.btn.active,
+.open>.navbar .navbar-nav>a.btn.dropdown-toggle {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline: 0 !important;
+}
+
+.btn .badge,
+.navbar .navbar-nav>a.btn .badge {
+  margin: 0;
+}
+
+.btn.btn-icon,
+.navbar .navbar-nav>a.btn.btn-icon {
+  height: 2.375rem;
+  min-width: 2.375rem;
+  width: 2.375rem;
+  padding: 0;
+  font-size: 0.9375rem;
+  overflow: hidden;
+  position: relative;
+  line-height: normal;
+}
+
+.btn.btn-icon.btn-simple,
+.navbar .navbar-nav>a.btn.btn-icon.btn-simple {
+  padding: 0;
+}
+
+.btn.btn-icon.btn-sm,
+.navbar .navbar-nav>a.btn.btn-icon.btn-sm {
+  height: 1.875rem;
+  min-width: 1.875rem;
+  width: 1.875rem;
+}
+
+.btn.btn-icon.btn-sm .fa,
+.btn.btn-icon.btn-sm .far,
+.btn.btn-icon.btn-sm .fas,
+.btn.btn-icon.btn-sm .now-ui-icons,
+.navbar .navbar-nav>a.btn.btn-icon.btn-sm .fa,
+.navbar .navbar-nav>a.btn.btn-icon.btn-sm .far,
+.navbar .navbar-nav>a.btn.btn-icon.btn-sm .fas,
+.navbar .navbar-nav>a.btn.btn-icon.btn-sm .now-ui-icons {
+  font-size: 0.6875rem;
+}
+
+.btn.btn-icon.btn-lg,
+.navbar .navbar-nav>a.btn.btn-icon.btn-lg {
+  height: 3.6rem;
+  min-width: 3.6rem;
+  width: 3.6rem;
+}
+
+.btn.btn-icon.btn-lg .fa,
+.btn.btn-icon.btn-lg .far,
+.btn.btn-icon.btn-lg .fas,
+.btn.btn-icon.btn-lg .now-ui-icons,
+.navbar .navbar-nav>a.btn.btn-icon.btn-lg .fa,
+.navbar .navbar-nav>a.btn.btn-icon.btn-lg .far,
+.navbar .navbar-nav>a.btn.btn-icon.btn-lg .fas,
+.navbar .navbar-nav>a.btn.btn-icon.btn-lg .now-ui-icons {
+  font-size: 1.325rem;
+}
+
+.btn.btn-icon:not(.btn-footer) .now-ui-icons,
+.btn.btn-icon:not(.btn-footer) .fa,
+.btn.btn-icon:not(.btn-footer) .far,
+.btn.btn-icon:not(.btn-footer) .fas,
+.navbar .navbar-nav>a.btn.btn-icon:not(.btn-footer) .now-ui-icons,
+.navbar .navbar-nav>a.btn.btn-icon:not(.btn-footer) .fa,
+.navbar .navbar-nav>a.btn.btn-icon:not(.btn-footer) .far,
+.navbar .navbar-nav>a.btn.btn-icon:not(.btn-footer) .fas {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-12px, -12px);
+  line-height: 1.5626rem;
+  width: 24px;
+}
+
+.btn:not(.btn-icon) .now-ui-icons,
+.navbar .navbar-nav>a.btn:not(.btn-icon) .now-ui-icons {
+  position: relative;
+  top: 1px;
+}
+
+.navbar .navbar-nav .nav-link i.fa+p,
+.navbar .navbar-nav .nav-link i.now-ui-icons+p {
+  margin-left: 3px;
+}
+
+.navbar .navbar-nav .nav-link i.fa,
+.navbar .navbar-nav .nav-link i.now-ui-icons {
+  font-size: 18px;
+  position: relative;
+  top: 3px;
+  text-align: center;
+  width: 21px;
+}
+
+.navbar .navbar-nav .nav-link i.now-ui-icons {
+  top: 4px;
+  font-size: 16px;
+}
+
+.dropdown-menu .now-ui-icons {
+  margin-right: 10px;
+  position: relative;
+  top: 4px;
+  font-size: 18px;
+  margin-top: -5px;
+  opacity: .5;
+}
+.alert i.fa,
+.alert i.now-ui-icons {
+  font-size: 20px;
+}
+
+.now-ui-icons {
+  display: inline-block;
+  font: normal normal normal 14px/1 'Nucleo Outline';
+  font-size: inherit;
+  speak: none;
+  text-transform: none;
+  /* Better Font Rendering */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*------------------------
+  change icon size
+-------------------------*/
+
+/*----------------------------------
+  add a square/circle background
+-----------------------------------*/
+
+.now-ui-icons.circle {
+  padding: 0.33333333em;
+  vertical-align: -16%;
+  background-color: #eee;
+}
+
+.now-ui-icons.circle {
+  border-radius: 50%;
+}
+
+.nc-icon-ul>li>.now-ui-icons {
+  position: absolute;
+  left: -1.57142857em;
+  top: 0.14285714em;
+  text-align: center;
+}
+
+.nc-icon-ul>li>.now-ui-icons.circle {
+  top: -0.19047619em;
+  left: -1.9047619em;
+}
+
+/*------------------------
+  spinning icons
+-------------------------*/
+
+.now-ui-icons.spin {
+  -webkit-animation: nc-icon-spin 2s infinite linear;
+  -moz-animation: nc-icon-spin 2s infinite linear;
+  animation: nc-icon-spin 2s infinite linear;
+}
+
+.now-ui-icons.ui-1_check:before {
+  content: "\ea22";
+}
+
+.now-ui-icons.ui-1_email-85:before {
+  content: "\ea2a";
+}
+
+.now-ui-icons.arrows-1_cloud-download-93:before {
+  content: "\ea21";
+}
+
+.now-ui-icons.arrows-1_cloud-upload-94:before {
+  content: "\ea24";
+}
+
+.now-ui-icons.arrows-1_minimal-down:before {
+  content: "\ea39";
+}
+
+.now-ui-icons.arrows-1_minimal-left:before {
+  content: "\ea3a";
+}
+
+.now-ui-icons.arrows-1_minimal-right:before {
+  content: "\ea3b";
+}
+
+.now-ui-icons.arrows-1_minimal-up:before {
+  content: "\ea3c";
+}
+
+.now-ui-icons.arrows-1_refresh-69:before {
+  content: "\ea44";
+}
+
+.now-ui-icons.arrows-1_share-66:before {
+  content: "\ea4c";
+}
+
+.now-ui-icons.business_badge:before {
+  content: "\ea09";
+}
+
+.now-ui-icons.business_bank:before {
+  content: "\ea0a";
+}
+
+.now-ui-icons.business_briefcase-24:before {
+  content: "\ea13";
+}
+
+.now-ui-icons.business_bulb-63:before {
+  content: "\ea15";
+}
+
+.now-ui-icons.business_chart-bar-32:before {
+  content: "\ea1e";
+}
+
+.now-ui-icons.business_chart-pie-36:before {
+  content: "\ea1f";
+}
+
+.now-ui-icons.business_globe:before {
+  content: "\ea2f";
+}
+
+.now-ui-icons.business_money-coins:before {
+  content: "\ea40";
+}
+
+.now-ui-icons.clothes_tie-bow:before {
+  content: "\ea5b";
+}
+
+.now-ui-icons.design_vector:before {
+  content: "\ea61";
+}
+
+.now-ui-icons.design_app:before {
+  content: "\ea08";
+}
+
+.now-ui-icons.design_bullet-list-67:before {
+  content: "\ea14";
+}
+
+.now-ui-icons.design_image:before {
+  content: "\ea33";
+}
+
+.now-ui-icons.design_palette:before {
+  content: "\ea41";
+}
+
+.now-ui-icons.design_scissors:before {
+  content: "\ea4a";
+}
+
+.now-ui-icons.design-2_html5:before {
+  content: "\ea32";
+}
+
+.now-ui-icons.design-2_ruler-pencil:before {
+  content: "\ea48";
+}
+
+.now-ui-icons.emoticons_satisfied:before {
+  content: "\ea49";
+}
+
+.now-ui-icons.files_box:before {
+  content: "\ea12";
+}
+
+.now-ui-icons.files_paper:before {
+  content: "\ea43";
+}
+
+.now-ui-icons.files_single-copy-04:before {
+  content: "\ea52";
+}
+
+.now-ui-icons.health_ambulance:before {
+  content: "\ea07";
+}
+
+.now-ui-icons.loader_gear:before {
+  content: "\ea4e";
+}
+
+.now-ui-icons.loader_refresh:before {
+  content: "\ea44";
+}
+
+.now-ui-icons.location_bookmark:before {
+  content: "\ea10";
+}
+
+.now-ui-icons.location_compass-05:before {
+  content: "\ea25";
+}
+
+.now-ui-icons.location_map-big:before {
+  content: "\ea3d";
+}
+
+.now-ui-icons.location_pin:before {
+  content: "\ea47";
+}
+
+.now-ui-icons.location_world:before {
+  content: "\ea63";
+}
+
+.now-ui-icons.media-1_album:before {
+  content: "\ea02";
+}
+
+.now-ui-icons.media-1_button-pause:before {
+  content: "\ea16";
+}
+
+.now-ui-icons.media-1_button-play:before {
+  content: "\ea18";
+}
+
+.now-ui-icons.media-1_button-power:before {
+  content: "\ea19";
+}
+
+.now-ui-icons.media-1_camera-compact:before {
+  content: "\ea1c";
+}
+
+.now-ui-icons.media-2_note-03:before {
+  content: "\ea3f";
+}
+
+.now-ui-icons.media-2_sound-wave:before {
+  content: "\ea57";
+}
+
+.now-ui-icons.objects_diamond:before {
+  content: "\ea29";
+}
+
+.now-ui-icons.objects_globe:before {
+  content: "\ea2f";
+}
+
+.now-ui-icons.objects_key-25:before {
+  content: "\ea38";
+}
+
+.now-ui-icons.objects_planet:before {
+  content: "\ea46";
+}
+
+.now-ui-icons.objects_spaceship:before {
+  content: "\ea55";
+}
+
+.now-ui-icons.objects_support-17:before {
+  content: "\ea56";
+}
+
+.now-ui-icons.objects_umbrella-13:before {
+  content: "\ea5f";
+}
+
+.now-ui-icons.education_agenda-bookmark:before {
+  content: "\ea01";
+}
+
+.now-ui-icons.education_atom:before {
+  content: "\ea0c";
+}
+
+.now-ui-icons.education_glasses:before {
+  content: "\ea2d";
+}
+
+.now-ui-icons.education_hat:before {
+  content: "\ea30";
+}
+
+.now-ui-icons.education_paper:before {
+  content: "\ea42";
+}
+
+.now-ui-icons.shopping_bag-16:before {
+  content: "\ea0d";
+}
+
+.now-ui-icons.shopping_basket:before {
+  content: "\ea0b";
+}
+
+.now-ui-icons.shopping_box:before {
+  content: "\ea11";
+}
+
+.now-ui-icons.shopping_cart-simple:before {
+  content: "\ea1d";
+}
+
+.now-ui-icons.shopping_credit-card:before {
+  content: "\ea28";
+}
+
+.now-ui-icons.shopping_delivery-fast:before {
+  content: "\ea27";
+}
+
+.now-ui-icons.shopping_shop:before {
+  content: "\ea50";
+}
+
+.now-ui-icons.shopping_tag-content:before {
+  content: "\ea59";
+}
+
+.now-ui-icons.sport_trophy:before {
+  content: "\ea5d";
+}
+
+.now-ui-icons.sport_user-run:before {
+  content: "\ea60";
+}
+
+.now-ui-icons.tech_controller-modern:before {
+  content: "\ea26";
+}
+
+.now-ui-icons.tech_headphones:before {
+  content: "\ea31";
+}
+
+.now-ui-icons.tech_laptop:before {
+  content: "\ea36";
+}
+
+.now-ui-icons.tech_mobile:before {
+  content: "\ea3e";
+}
+
+.now-ui-icons.tech_tablet:before {
+  content: "\ea58";
+}
+
+.now-ui-icons.tech_tv:before {
+  content: "\ea5e";
+}
+
+.now-ui-icons.tech_watch-time:before {
+  content: "\ea62";
+}
+
+.now-ui-icons.text_align-center:before {
+  content: "\ea05";
+}
+
+.now-ui-icons.text_align-left:before {
+  content: "\ea06";
+}
+
+.now-ui-icons.text_bold:before {
+  content: "\ea0e";
+}
+
+.now-ui-icons.text_caps-small:before {
+  content: "\ea1b";
+}
+
+.now-ui-icons.gestures_tap-01:before {
+  content: "\ea5a";
+}
+
+.now-ui-icons.transportation_air-baloon:before {
+  content: "\ea03";
+}
+
+.now-ui-icons.transportation_bus-front-12:before {
+  content: "\ea17";
+}
+
+.now-ui-icons.travel_info:before {
+  content: "\ea04";
+}
+
+.now-ui-icons.travel_istanbul:before {
+  content: "\ea34";
+}
+
+.now-ui-icons.ui-1_bell-53:before {
+  content: "\ea0f";
+}
+
+.now-ui-icons.ui-1_calendar-60:before {
+  content: "\ea1a";
+}
+
+.now-ui-icons.ui-1_lock-circle-open:before {
+  content: "\ea35";
+}
+
+.now-ui-icons.ui-1_send:before {
+  content: "\ea4d";
+}
+
+.now-ui-icons.ui-1_settings-gear-63:before {
+  content: "\ea4e";
+}
+
+.now-ui-icons.ui-1_simple-add:before {
+  content: "\ea4f";
+}
+
+.now-ui-icons.ui-1_simple-delete:before {
+  content: "\ea54";
+}
+
+.now-ui-icons.ui-1_simple-remove:before {
+  content: "\ea53";
+}
+
+.now-ui-icons.ui-1_zoom-bold:before {
+  content: "\ea64";
+}
+
+.now-ui-icons.ui-2_chat-round:before {
+  content: "\ea20";
+}
+
+.now-ui-icons.ui-2_favourite-28:before {
+  content: "\ea2b";
+}
+
+.now-ui-icons.ui-2_like:before {
+  content: "\ea37";
+}
+
+.now-ui-icons.ui-2_settings-90:before {
+  content: "\ea4b";
+}
+
+.now-ui-icons.ui-2_time-alarm:before {
+  content: "\ea5c";
+}
+
+.now-ui-icons.users_circle-08:before {
+  content: "\ea23";
+}
+
+.now-ui-icons.users_single-02:before {
+  content: "\ea51";
+}
+
+.all-icons .font-icon-detail {
+  text-align: center;
+  padding: 45px 0px 30px;
+  border: 1px solid #e5e5e5;
+  border-radius: 0.1875rem;
+  margin: 15px 0;
+  min-height: 168px;
+}
+
+.all-icons [class*="now-ui-icons"] {
+  font-size: 32px;
+}
+
+.fixed-plugin .dropdown .dropdown-menu .now-ui-icons {
+  top: 5px;
+}

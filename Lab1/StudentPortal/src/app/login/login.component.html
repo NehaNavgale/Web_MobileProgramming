@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="row">
+    <div class="col-4 float-right dp-flex">
+      <form>
+        <div>
+          <a class="heading" href="/home">Student Portal</a>
+        </div>
+        <div class="form-group">
+          <h4> Sign in to Student Portal</h4>
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control form-control-lg control-label" name="email" placeholder="User Name" [(ngModel)]="emailID"/>
+        </div>
+        <div class="form-group">
+          <input type="password" class="form-control form-control-lg control-label" name="password" placeholder="Password" [(ngModel)]="password"/>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-primary vipra-blue-button width-100" (click)="userLogin()">Login</button>
+        </div>
+        <div *ngIf="InvalidUser" class="form-group">
+          <span style="color: red"> *Please check your credentials</span>
+        </div>
+        <div class="">
+          <a routerLink="/registration" class="vipra-blue-text">Don't have an account? Sign up</a>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
