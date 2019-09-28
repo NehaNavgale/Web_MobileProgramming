@@ -1,15 +1,31 @@
 <div class="parent-container">
   <div class="child-container">
-    <h2><b>Search for your recipe!!
-    </b></h2><br>
+    <div class="row">
+      <div class="col-sm-6">
+        <h2><b>Search for your recipe and learn how to make it!!
+        </b></h2>
+      </div>
+      <div class="col-sm-6">
+        <h2><b>Search for Restaurants near by!!
+        </b></h2>
+      </div>
+    </div>
+    <br>
     <form>
       <div class="form-group">
-        <div class="form-group col-lg-6 col-lg-offset-3 input-group">
-          <input #recipe class="form-control" placeholder="Recipe name" type="text">
-          <span class="input-group-addon">-</span>
-          <input #place class="form-control" placeholder="Place" type="text">
-          <span class="input-group-addon">-</span>
-
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="form-group col-lg-offset-5 input-group">
+              <input #recipe class="form-control" placeholder="Recipe name" type="text">
+            </div>
+          </div>
+            <!--<span class="input-group-addon">-</span>-->
+          <div class="col-sm-6">
+            <div class="form-group col-lg-offset-5  input-group">
+              <input #place class="form-control" placeholder="Place" type="text">
+              <!--<span class="input-group-addon">-</span>-->
+            </div>
+          </div>
         </div>
         <br>
         <button (click)="getVenues()" class="btn btn-primary" type="button">Go</button>
@@ -23,10 +39,17 @@
       <div class="panel panel-default col-6">
         <div class="panel-heading"><b>Recipe Names</b></div>
         <div class="panel-body">
-          <div *ngFor="let recipeL of recipeList" class="list-group-item clearfix">
-            <div class="pull-left">
-              <!--<h4 class="list-group-item-heading">{{ recipeL.name }}</h4>-->
-              <a href="{{recipeL.recipe.url}}" class="list-group-item-text">{{ recipeL.recipe.label }}</a>
+          <div  *ngFor="let recipeL of recipeList" class=" list-group-item clearfix">
+            <div class="row">
+              <div class="col-sm-4">
+                <h4 class="list-group-item-heading">{{ recipeL.recipe.label }}</h4>
+              </div>
+              <div class="col-sm-4">
+                <h4 class="list-group-item-heading">{{ recipeL.recipe.calories}} Calories</h4>
+              </div>
+                <div class="col-sm-4 pull-right text-right">
+                    <a href="{{recipeL.recipe.url}}" class="list-group-item-text"><img style="height:100px; width:100px;" src="{{recipeL.recipe.image}}"/></a>
+                </div>
             </div>
 
             <!--<span class="pull-right">-->
