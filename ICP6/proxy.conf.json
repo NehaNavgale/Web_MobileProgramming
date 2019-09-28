@@ -1,0 +1,7 @@
+{
+  "/api/*": {
+    "target": "https://api.edamam.com",
+    "secure": false,
+    "logLevel": "debug"
+  }
+}
