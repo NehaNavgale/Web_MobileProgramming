@@ -1,11 +1,20 @@
-<div class="sidebar-wrapper" style="color: black;">
-  <ul class="nav">
-    <li routerLinkActive="active" *ngFor="let menuItem of menuItems" class="{{menuItem.class}} nav-item">
-      <a [routerLink]="[menuItem.path]">
-        <i class="now-ui-icons {{menuItem.icon}}"></i>
-        <p>{{menuItem.title}}</p>
-      </a>
-    </li>
-  </ul>
+<div class="wrapper text-white">
+  <div class="main_sidebar">
+    <div class="heading">
+      <h1 class="m-4">Students World</h1>
+    </div>
+    <div class="subHeading pl-5 pt-3">
+      Main Student
+    </div>
+    <ul class="pt-3">
+      <li><a href="/dashboard">Dashboard</a></li>
+      <li><a href="https://www.umkcbookstore.com/">Discover Books</a></li>
+      <li class="active"><a href="/courses">Online Courses</a></li>
+      <li><a href="/Announcements">Announcements</a></li>
+      <li><a href="/Video">Video Lessons</a></li>
+    </ul>
+    <div class="subHeading pl-5 pt-3">
+      Friends
+    </div>
+  </div>
 </div>
-

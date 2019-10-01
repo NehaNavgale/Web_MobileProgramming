@@ -1,0 +1,20 @@
+<header role="banner">
+  <nav class="navbar navbar-light bg-custom navbar-expand-md static-top">
+    <div class="navbar-collapse">
+      <div class="col-10">
+        <div class="navbar-nav mr-auto">
+          <a class="navbar-brand heading" href="/home">Student Portal</a>
+        </div>
+      </div>
+
+      <div class="col-2">
+        <form class="form-inline mt-2 mt-md-0 float-right">
+          <a class="btn  form-control mr-sm-2" href="/register" [hidden]="hideSignup">Sign Up</a>
+          <a class="btn  my-2 my-sm-0" (click)="logInOut()">{{loginout}}</a>
+          <a class="btn  form-control mr-sm-2" href="/user" [hidden]="!hideSignup"> <i class="fa fa-logout"></i></a>
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+

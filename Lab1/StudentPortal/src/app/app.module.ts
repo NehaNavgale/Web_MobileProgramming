@@ -11,6 +11,11 @@ import { RegisterComponent } from './register/register.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { SideBarComponent } from './side-bar/side-bar.component';
 import { DashboardLayoutComponent } from './dashboard-layout/dashboard-layout.component';
+import { CalendarComponent } from './calendar/calendar.component';
+import { CoursesComponent } from './courses/courses.component';
+import { StudentProfileComponent } from './student-profile/student-profile.component';
+import { HeaderComponent } from './header/header.component';
+import { StudentHeaderComponent } from './student-header/student-header.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +24,12 @@ import { DashboardLayoutComponent } from './dashboard-layout/dashboard-layout.co
     RegisterComponent,
     DashboardComponent,
     SideBarComponent,
-    DashboardLayoutComponent
+    DashboardLayoutComponent,
+    CalendarComponent,
+    CoursesComponent,
+    StudentProfileComponent,
+    HeaderComponent,
+    StudentHeaderComponent
   ],
   imports: [
     BrowserModule,

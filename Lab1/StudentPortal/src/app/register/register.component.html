@@ -1,45 +1,45 @@
-<div class="container">
-  <div class="row">
+<div>
+  <app-header></app-header>
+</div>
+<div class="container h-100 m-6">
+  <div class="row h-100 justify-content-center align-items-center">
     <div class="col-4 dp-flex">
-      <form autocomplete="off">
-        <div>
-          <a class="heading" href="/home">Student Portal</a>
-        </div>
+      <form #registerStudent = "ngForm" (ngSubmit)="registerUser(registerStudent.value)">
         <div class="form-group">
           <h4> Sign up to Student Portal</h4>
         </div>
         <div class="form-group">
-          <input type="text" class="form-control form-control-lg" name="firstname" placeholder="First Name" [(ngModel)]="user.firstname">
+          <input type="text" class="form-control form-control-lg" name="firstname" placeholder="First Name" ngModel>
         </div>
 
         <div class="form-group">
-          <input type="text" class="form-control form-control-lg"  name="lastname" placeholder="Last Name" [(ngModel)]="user.lastname">
+          <input type="text" class="form-control form-control-lg"  name="lastname" placeholder="Last Name" ngModel>
         </div>
 
         <div class="form-group">
-          <input type="text" class="form-control form-control-lg" name="email" placeholder="Email Id" [(ngModel)]="user.email">
+          <input type="text" class="form-control form-control-lg" name="email" placeholder="Email Id" ngModel>
         </div>
 
         <div class="form-group">
-          <input type="text" class="form-control form-control-lg" name="studentId" placeholder="Student Id" [(ngModel)]="user.studentId">
+          <input type="text" class="form-control form-control-lg" name="studentId" placeholder="Student Id" ngModel>
         </div>
 
         <div class="form-group">
-          <input type="password" class="form-control form-control-lg"  name="password" placeholder="Password" [(ngModel)]="user.password">
+          <input type="password" class="form-control form-control-lg"  name="password" placeholder="Password" ngModel>
         </div>
 
         <div class="form-group">
-          <input type="password" class="form-control form-control-lg"  name="cpassword" placeholder="Confirm Password" [(ngModel)]="user.cpassword">
+          <input type="password" class="form-control form-control-lg"  name="cpassword" placeholder="Confirm Password" ngModel>
         </div>
 
         <div class="form-group">
-          <button type="button" class="btn btn-success vipra-blue-button width-100" (click)="registerUser()">Register</button>
+          <button type="submit" class="btn btn-primary vipra-blue-button width-100">Register</button>
         </div>
-        <div *ngIf="missingField" class="form-group">
-          <span style="color: red"> *All fields are required</span>
-        </div>
-        <div class="">
-          <a routerLink="/login" class="vipra-blue-text">Already signed up? Login Here</a>
+        <!--<div *ngIf="missingField" class="form-group">-->
+          <!--<span style="color: red"> *All fields are required</span>-->
+        <!--</div>-->
+        <div>
+          <a href="/login">Already signed up? Login Here</a>
         </div>
       </form>
     </div>

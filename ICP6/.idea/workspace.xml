@@ -2,8 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f18fc215-1c67-4a4b-96ef-69f0177c1b18" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab1/StudentPortal/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab1/StudentPortal/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab1/StudentPortal/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab1/StudentPortal/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab1/StudentPortal/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab1/StudentPortal/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab1/StudentPortal/src/app/dashboard-layout/dashboard-layout.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab1/StudentPortal/src/app/dashboard-layout/dashboard-layout.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab1/StudentPortal/src/app/login/login.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab1/StudentPortal/src/app/login/login.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab1/StudentPortal/src/app/login/login.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab1/StudentPortal/src/app/login/login.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab1/StudentPortal/src/app/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab1/StudentPortal/src/app/login/login.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab1/StudentPortal/src/app/register/register.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab1/StudentPortal/src/app/register/register.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab1/StudentPortal/src/app/register/register.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab1/StudentPortal/src/app/register/register.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab1/StudentPortal/src/app/register/register.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab1/StudentPortal/src/app/register/register.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab1/StudentPortal/src/app/side-bar/side-bar.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab1/StudentPortal/src/app/side-bar/side-bar.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab1/StudentPortal/src/app/side-bar/side-bar.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab1/StudentPortal/src/app/side-bar/side-bar.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab1/StudentPortal/src/app/side-bar/side-bar.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab1/StudentPortal/src/app/side-bar/side-bar.component.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/dist/" />
@@ -20,8 +32,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/search-recipe/search-recipe.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="48" column="132" lean-forward="true" selection-start-line="48" selection-start-column="132" selection-end-line="48" selection-end-column="132" />
+            <state relative-caret-position="705">
+              <caret line="48" column="132" selection-start-line="48" selection-start-column="132" selection-end-line="48" selection-end-column="132" />
               <folding>
                 <element signature="e#0#71#0" expanded="true" />
               </folding>
@@ -32,11 +44,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/app/search-recipe/search-recipe.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
-              <folding>
-                <element signature="n#style#0;n#img#0;n#a#0;n#td#2;n#tr#1;n#table#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="280">
+              <caret line="53" selection-start-line="53" selection-end-line="53" />
             </state>
           </provider>
         </entry>
@@ -174,12 +183,13 @@
       <updated>1569448194862</updated>
       <workItem from="1569448197161" duration="4767000" />
       <workItem from="1569605155267" duration="6669000" />
-      <workItem from="1569694742813" duration="3917000" />
+      <workItem from="1569694742813" duration="4131000" />
+      <workItem from="1569786893339" duration="111000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15353000" />
+    <option name="totallyTimeSpent" value="15678000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="903" extended-state="0" />
@@ -199,7 +209,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="TypeScript" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.102342784" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.40443897" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -294,6 +304,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/search-recipe/search-recipe.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="705">
+          <caret line="48" column="132" selection-start-line="48" selection-start-column="132" selection-end-line="48" selection-end-column="132" />
+          <folding>
+            <element signature="e#0#71#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/app.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -301,20 +321,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/search-recipe/search-recipe.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="48" column="132" lean-forward="true" selection-start-line="48" selection-start-column="132" selection-end-line="48" selection-end-column="132" />
-          <folding>
-            <element signature="e#0#71#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/search-recipe/search-recipe.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
+        <state relative-caret-position="280">
+          <caret line="53" selection-start-line="53" selection-end-line="53" />
           <folding>
             <element signature="n#style#0;n#img#0;n#a#0;n#td#2;n#tr#1;n#table#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
           </folding>
