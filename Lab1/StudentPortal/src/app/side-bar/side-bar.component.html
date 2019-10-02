@@ -3,18 +3,18 @@
     <div class="heading">
       <h1 class="m-4">Students World</h1>
     </div>
-    <div class="subHeading pl-5 pt-3">
-      Main Student
+    <div class="pl-5 pt-3">
+      <h4><u>Main Student</u></h4>
     </div>
     <ul class="pt-3">
-      <li><a href="/dashboard">Dashboard</a></li>
-      <li><a href="https://www.umkcbookstore.com/">Discover Books</a></li>
-      <li class="active"><a href="/courses">Online Courses</a></li>
-      <li><a href="/Announcements">Announcements</a></li>
-      <li><a href="/Video">Video Lessons</a></li>
+      <li [ngClass]="{'active': selectedItemId == 'dashboard'}" (click)="selectedItemId = 'dashboard'"><a href="/"><i class="fa fa-dashboard fa-2x"></i> <span class="subHeading">Dashboard</span></a></li>
+      <li [ngClass]="{'active': selectedItemId == 'book'}" (click)="selectedItemId = 'book'"><a href="https://www.umkcbookstore.com/"><i class="fa fa-book fa-2x"></i> <span class="subHeading">Discover Books</span></a></li>
+      <li [ngClass]="{'active': selectedItemId == 'course'}" (click)="selectedItemId = 'course'"><a  href="/courses"><i class="fa fa-graduation-cap fa-2x"></i> <span class="subHeading">Courses</span></a></li>
+      <li [ngClass]="{'active': selectedItemId == 'calendar'}" (click)="selectedItemId = 'calendar'"><a  href="/calendar"><i class="fa fa-calendar fa-2x"></i> <span class="subHeading">Calendar</span></a></li>
+      <li [ngClass]="{'active': selectedItemId == 'lessons'}" (click)="selectedItemId = 'lessons'"><a  href="/Video"><i class="fa fa-play-circle fa-2x"></i> <span class="subHeading">Video Lessons</span></a></li>
     </ul>
     <div class="subHeading pl-5 pt-3">
-      Friends
+      <h4><u>Friends</u></h4>
     </div>
   </div>
 </div>

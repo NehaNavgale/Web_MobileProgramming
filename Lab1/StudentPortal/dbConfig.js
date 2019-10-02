@@ -18,12 +18,12 @@ app.use('/register', apiRegisterRouter);
 app.use('/login', apiLoginRouter);
 
 
-var port = process.env.PORT || 4000;
+var port = process.env.PORT || 8000;
 app.set('port', port);
 var server = http.createServer(app);
 
 
 server.listen(port, () => {
-  console.log('server running on port 4000')});
+  console.log('server running on port 8000')});
 
 module.exports = app;

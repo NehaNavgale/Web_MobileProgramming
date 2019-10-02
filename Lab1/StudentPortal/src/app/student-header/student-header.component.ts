@@ -8,7 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class StudentHeaderComponent implements OnInit {
 
   constructor() { }
-
+  dynamic = 6;
+  max = 10;
   ngOnInit() {
   }
 
