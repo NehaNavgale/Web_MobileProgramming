@@ -33,30 +33,17 @@ export class RegisterServiceService {
     const body = res;
     return body || {};
   }
-
-  // getCustomers(): Observable<any> {
-  //   return this.http.get(apiUrl, httpOptions).pipe(
-  //     map(this.extractData),
-  //     catchError(this.handleError));
-  // }
+  // function to get the student details
+  getStudentDetail(emailAddress: string): Observable<any> {
+    return this.http.get(`${apiUrl}/getStudent?emailAddress=` + emailAddress, httpOptions).pipe(
+      map(this.extractData),
+      catchError(this.handleError));
+  }
+  // function to register new user
   registerStudent(data): Observable<any> {
     return this.http.post(apiUrl, data, httpOptions)
       .pipe(
         catchError(this.handleError)
       );
   }
-
-  // updateCustomerData(id: string, data): Observable<any> {
-  //   return this.http.put(`${apiUrl}/${id}`, data, httpOptions)
-  //     .pipe(
-  //       catchError(this.handleError)
-  //     );
-  // }
-  //
-  // deleteCustomer(id: string): Observable<{}> {
-  //   return this.http.delete(`${apiUrl}/${id}`, httpOptions)
-  //     .pipe(
-  //       catchError(this.handleError)
-  //     );
-  // }
 }

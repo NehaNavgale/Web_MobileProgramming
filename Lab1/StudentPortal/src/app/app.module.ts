@@ -10,7 +10,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
 import { SideBarComponent } from './side-bar/side-bar.component';
 import { DashboardLayoutComponent } from './dashboard-layout/dashboard-layout.component';
 import { CalendarComponent } from './calendar/calendar.component';
@@ -22,6 +21,7 @@ import { FlatpickrModule } from 'angularx-flatpickr';
 import { CalendarModule, DateAdapter } from 'angular-calendar';
 import { adapterFactory } from 'angular-calendar/date-adapters/date-fns';
 import { NgbModalModule } from '@ng-bootstrap/ng-bootstrap';
+import { VideoLessonsComponent } from './video-lessons/video-lessons.component';
 // import { ChartsModule } from 'ng2-charts';
 
 @NgModule({
@@ -29,14 +29,14 @@ import { NgbModalModule } from '@ng-bootstrap/ng-bootstrap';
     AppComponent,
     LoginComponent,
     RegisterComponent,
-    DashboardComponent,
     SideBarComponent,
     DashboardLayoutComponent,
     CalendarComponent,
     CoursesComponent,
     StudentProfileComponent,
     HeaderComponent,
-    StudentHeaderComponent
+    StudentHeaderComponent,
+    VideoLessonsComponent
   ],
   imports: [
     BrowserModule,

@@ -1,4 +1,8 @@
 .bg-info {
-  background-color: #63c2de !important;
-  height: 100px;
+  background-color: white !important;
+  height: 100%;
+  color: black !important;
+}
+.sub-info {
+  background-color: #20a8d8 !important;
 }
