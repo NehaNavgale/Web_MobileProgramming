@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="110dp"
+            android:text="Login Screen"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#009688"
+            android:textSize="36sp" />
+
+        <EditText
+            android:id="@+id/txtUserName"
+            android:layout_width="273dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="200dp"
+            android:ems="10"
+            android:hint="Enter your User Name"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/txtPassword"
+            android:layout_width="272dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="280dp"
+            android:ems="10"
+            android:hint="Enter Password"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/loginBtn"
+            android:layout_width="102dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="160dp"
+            android:layout_marginTop="360dp"
+            android:background="@color/colorPrimary"
+            android:text="Login" />
+
+
+    </FrameLayout>
+
+</android.support.constraint.ConstraintLayout>
