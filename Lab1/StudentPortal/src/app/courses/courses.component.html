@@ -2,7 +2,7 @@
   <div class="col-sm-2">
     <app-side-bar></app-side-bar>
   </div>
-  <div class="col-sm-10 pl-5">
+  <div class="col-sm-10">
       <app-student-header></app-student-header>
     <div class="row p-5">
       <div class="col-sm-6">
@@ -19,33 +19,29 @@
             <div class="row">
               <div class="col-sm-6">
                 <div class="form-group">
-                  <label for="course">Course</label>
-                  <select class="form-control" id="course">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                    <option>6</option>
-                    <option>7</option>
-                    <option>8</option>
-                    <option>9</option>
-                    <option>10</option>
-                    <option>11</option>
-                    <option>12</option>
+                  <label>Course</label>
+                  <select class="form-control" [(ngModel)]="selectedCourse">
+                    <option >select</option>
+                    <option value={{course.className}} *ngFor="let course of courses">{{course.className}}</option>
                   </select>
                 </div>
               </div>
               <div class="col-sm-6">
                 <div class="form-group">
                   <label for="term">Term</label>
-                  <select class="form-control" id="term">
+                  <select class="form-control" [(ngModel)]="term" id="term">
                     <option>Fall 2019</option>
                     <option>Spring 2020</option>
+                    <option>Fall 2020</option>
                   </select>
                 </div>
               </div>
           </div>
+            <div class="row">
+              <div class="col-sm-12 float-right">
+              <button type="submit" class="btn btn-danger float-right" (click)="addCourse()">Add</button>
+              </div>
+            </div>
         </div>
     </div><!--/.row-->
       </div>
@@ -68,7 +64,13 @@
             </tr>
             </thead>
             <tbody>
-            <tr>
+            <tr *ngFor="let rCourse of registeredCourse">
+              <td>{{rCourse.className}}</td>
+              <td>{{rCourse.term}}</td>
+              <td>{{rCourse.days_Times}}</td>
+              <td>{{rCourse.instructor}}</td>
+              <td>{{rCourse.room}}</td>
+              <td>{{rCourse.credit}}</td>
             </tr>
             </tbody>
           </table>

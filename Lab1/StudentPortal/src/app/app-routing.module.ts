@@ -2,21 +2,21 @@ import { NgModule } from '@angular/core';
 import {Routes, RouterModule } from '@angular/router';
 import {LoginComponent} from './login/login.component';
 import {RegisterComponent} from './register/register.component';
-import {DashboardComponent} from './dashboard/dashboard.component';
 import {DashboardLayoutComponent} from './dashboard-layout/dashboard-layout.component';
 import {HeaderComponent} from './header/header.component';
 import {CalendarComponent} from './calendar/calendar.component';
 import {CoursesComponent} from './courses/courses.component';
 import {StudentProfileComponent} from './student-profile/student-profile.component';
+import {VideoLessonsComponent} from './video-lessons/video-lessons.component';
 
 
 export const routes: Routes = [
   {
-    path: '',
+    path: 'dashboard',
     component: DashboardLayoutComponent
   },
   {
-    path: 'login',
+    path: '',
     component: LoginComponent
   },
   {
@@ -34,6 +34,10 @@ export const routes: Routes = [
   {
     path: 'profile',
     component: StudentProfileComponent
+  },
+  {
+    path: 'videoLessons',
+    component: VideoLessonsComponent
   }
 ];
 

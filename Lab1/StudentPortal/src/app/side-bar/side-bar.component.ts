@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {ActivatedRoute, Router} from '@angular/router';
+import {CourseServiceService} from '../services/course-service.service';
 
 @Component({
   selector: 'app-side-bar',
@@ -8,7 +10,16 @@ import { Component, OnInit } from '@angular/core';
 export class SideBarComponent implements OnInit {
   selectedItemId;
   item;
-  constructor() { }
+  dynamic = 6;
+  max = 10;
+  loggedIn;
+  constructor(private course: CourseServiceService) { }
   ngOnInit() {
+    // this.course.getRegisteredCourse(localStorage.getItem('LoggedinEmailId')).subscribe(res => {
+    //   this.dynamic = res.length;
+    // }, err => {
+    //   console.log(err);
+    // });
+    this.loggedIn = localStorage.getItem('LoggedinEmailId');
   }
 }

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Router} from '@angular/router';
 import {LoginServiceService} from '../services/login-service.service';
+import {CourseServiceService} from '../services/course-service.service';
 
 @Component({
   selector: 'app-login',
@@ -11,10 +12,11 @@ export class LoginComponent implements OnInit {
   emailID: String = '';
   password: String = '';
   InvalidUser: Boolean = false;
-  constructor(private loginService: LoginServiceService, private router: Router) { }
+  constructor(private loginService: LoginServiceService, private router: Router, private courseService: CourseServiceService) { }
 
   ngOnInit() {
   }
+  // function to check if the logged in user is authentic or not.
   userLogin() {
     const student = {
       emailID: this.emailID,
@@ -27,6 +29,7 @@ export class LoginComponent implements OnInit {
         this.router.navigate(['./dashboard']);
         // @ts-ignore
         console.log(data.message);
+        this.loginService.setUsers(data);
       } else {
         // @ts-ignore
         console.log(data.message);

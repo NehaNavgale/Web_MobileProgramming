@@ -5,21 +5,21 @@ const student = require('../models/register');
 //get user details by Email Id
 
 studentRouter.post('/',function (req, res, next) {
-  let student = new student(req.body);
+  // let loggedStudent = new student(req.body);
 
-  student.findOne({emailID : user.emailID}, function (err, data) {
+  student.findOne({emailAddress : req.body.emailID}, function (err, data) {
 
     if( data != null) {
-      if (user.password == data.password) {
+      if (req.body.password == data.password) {
         var temp = {
-          emailID: data.emailID,
-          fullName: data.firstName + data.lastName,
+          emailID: data.emailAddress,
+          fullName: data.firstName + ' ' + data.lastName,
           password: data.password
         }
 
         console.log("password" + temp.password);
 
-        res.json({message: "Success", user: temp});
+        res.json({message: "Success", loggedStudent: temp});
       } else {
         res.json({message:"Invalid credentials"});
       }
@@ -28,6 +28,6 @@ studentRouter.post('/',function (req, res, next) {
       res.json({message:'Student does not exists'});
     }
   });
-})
+});
 
 module.exports = studentRouter;

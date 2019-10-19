@@ -1,20 +1,47 @@
 <div class="wrapper text-white">
-  <div class="main_sidebar">
-    <div class="heading">
-      <h1 class="m-4">Students World</h1>
+  <div class="sidebar">
+    <div class="row">
+      <div class="heading">
+          <h1 class="m-4">Student Portal</h1>
+      </div>
     </div>
-    <div class="pl-5 pt-3">
+    <div class="row">
+      <div class="pl-5 pt-3">
       <h4><u>Main Student</u></h4>
     </div>
+    </div>
+    <div class="row">
     <ul class="pt-3">
-      <li [ngClass]="{'active': selectedItemId == 'dashboard'}" (click)="selectedItemId = 'dashboard'"><a href="/"><i class="fa fa-dashboard fa-2x"></i> <span class="subHeading">Dashboard</span></a></li>
+      <li [ngClass]="{'active': selectedItemId == 'dashboard'}" (click)="selectedItemId = 'dashboard'"><a href="/dashboard"><i class="fa fa-dashboard fa-2x"></i> <span class="subHeading">Dashboard</span></a></li>
       <li [ngClass]="{'active': selectedItemId == 'book'}" (click)="selectedItemId = 'book'"><a href="https://www.umkcbookstore.com/"><i class="fa fa-book fa-2x"></i> <span class="subHeading">Discover Books</span></a></li>
       <li [ngClass]="{'active': selectedItemId == 'course'}" (click)="selectedItemId = 'course'"><a  href="/courses"><i class="fa fa-graduation-cap fa-2x"></i> <span class="subHeading">Courses</span></a></li>
       <li [ngClass]="{'active': selectedItemId == 'calendar'}" (click)="selectedItemId = 'calendar'"><a  href="/calendar"><i class="fa fa-calendar fa-2x"></i> <span class="subHeading">Calendar</span></a></li>
-      <li [ngClass]="{'active': selectedItemId == 'lessons'}" (click)="selectedItemId = 'lessons'"><a  href="/Video"><i class="fa fa-play-circle fa-2x"></i> <span class="subHeading">Video Lessons</span></a></li>
+      <li [ngClass]="{'active': selectedItemId == 'lessons'}" (click)="selectedItemId = 'lessons'"><a  href="/videoLessons"><i class="fa fa-play-circle fa-2x"></i> <span class="subHeading">Video Lessons</span></a></li>
     </ul>
+    </div>
+    <div class="row">
     <div class="subHeading pl-5 pt-3">
       <h4><u>Friends</u></h4>
+    </div>
+    </div>
+    <div class="row pl-5 pt-3">
+      <div class="col-sm-2 float-right">
+        <img src="../../assets/img/girl%20(1).png" style="width:25px; height: 25px;">
+      </div>
+      <div class="col-sm-10 text-left"><h5>Shenika Rabun</h5></div>
+    </div>
+    <div class="row pl-5 pt-3">
+      <div class="col-sm-2 float-right">
+        <img src="../../assets/img/student.png" style="width:25px; height: 25px;">
+      </div>
+      <div class="col-sm-10 text-left"><h5>Cordell Prum</h5></div>
+
+    </div>
+    <div class="row pl-5 pt-3">
+      <div class="col-sm-2 float-right">
+        <img src="../../assets/img/girl.png" style="width:25px; height: 25px;">
+      </div>
+      <div class="col-sm-10 text-left"><h5>Hilde Barraza</h5></div>
     </div>
   </div>
 </div>

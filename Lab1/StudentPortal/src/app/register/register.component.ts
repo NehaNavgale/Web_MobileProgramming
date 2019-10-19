@@ -11,6 +11,7 @@ import { Router } from '@angular/router';
 export class RegisterComponent implements OnInit {
   angForm: FormGroup;
   constructor(private router: Router, private registerService: RegisterServiceService) { }
+  // function to register user to site by saving his details to mongoDB
   registerUser(event) {
     const studentDetail = {
       firstName: event.firstname,
@@ -22,7 +23,7 @@ export class RegisterComponent implements OnInit {
     };
     this.registerService.registerStudent(studentDetail)
       .subscribe(res => {
-        this.router.navigateByUrl('/dashboard');
+        this.router.navigateByUrl('/');
       }, (err) => {
         console.log(err);
       });

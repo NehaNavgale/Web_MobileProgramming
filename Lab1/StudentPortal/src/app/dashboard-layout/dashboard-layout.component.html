@@ -2,38 +2,98 @@
   <div class="col-sm-2">
     <app-side-bar></app-side-bar>
   </div>
-  <div class="col-sm-10 pl-5">
+  <div class="col-sm-10">
     <app-student-header></app-student-header>
-    <div class="row p-5"><h3><u>Classes</u></h3></div>
-    <div class="row text-center">
-      <div class="col-sm-6 col-lg-3">
-        <div class="card text-white bg-info">
-          <div class="card-body pb-0">
-            <button type="button" class="btn btn-transparent p-0 float-right">
-              <i class="icon-location-pin"></i>
-            </button>
-          </div>
-        </div>
+    <br/>
+    <br/>
+    <br/>
+    <div class="ml-5 mr-5">
+    <div class="row">
+      <div class="col-sm-12 text-left">
+      <h3><u>Classes</u></h3></div>
+    </div>
+    <br/>
+    <br/>
+    <div class="row col-sm-12">
+      <div *ngIf="registeredCourse.length==0">
+        No classes added
       </div>
-      <div class="col-sm-6 col-lg-3">
-        <div class="card text-white bg-info">
+      <!--*ngFor="let course of registeredCourse"-->
+      <div *ngFor="let course of registeredCourse" class="col-sm-6 col-lg-4 mt-4">
+        <div class="card border border-dark text-white bg-info">
           <div class="card-body pb-0">
-            <button type="button" class="btn btn-transparent p-0 float-right">
-              <i class="icon-location-pin"></i>
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-6 col-lg-3">
-        <div class="card text-white bg-info">
-          <div class="card-body pb-0">
-            <button type="button" class="btn btn-transparent p-0 float-right">
-              <i class="icon-location-pin"></i>
-            </button>
+            <div class="row">
+              <div class="col-sm-12">
+                <!--{{course.className}}-->
+                <h3 class="float-left">{{course.className}}</h3>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                <!--{{course.instructor}}-->
+                <h5>Instructor: {{course.instructor}}</h5>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                <!--{{course.room}}-->
+                <h5>Room: {{course.room}}</h5>
+              </div>
+            </div>
+            <div class="row sub-info">
+              <div class="col-sm-6">
+                <!--{{course.days_Times}}-->
+                <h5 class="float-left">{{course.days_Times}}</h5>
+              </div>
+              <div class="col-sm-6">
+                <!--{{course.term}}-->
+                <h5 class="text-right">{{course.term}}</h5>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="row p-5"><h3><u>Upcoming Events</u></h3></div>
+    <br/>
+    <br/>
+    <br/>
+    <div class="row ">
+      <div class="col-sm-12 text-left">
+        <h3><u>Events</u></h3>
+      </div>
+    </div>
+    <br/>
+    <br/>
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="card">
+          <div class="card-header">
+            <i class="fa fa-align-justify"></i> My Events
+          </div>
+          <div class="card-body">
+            <table *ngIf="events.length>0" class="table table-striped">
+              <thead>
+              <tr>
+                <th>Event Name</th>
+                <th>Start</th>
+                <th>End</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr *ngFor="let event of events">
+                <td>{{event.title}}</td>
+                <td>{{event.start}}</td>
+                <td>{{event.end}}</td>
+              </tr>
+              </tbody>
+            </table>
+            <div *ngIf="events.length==0">
+              No events added
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   </div>
 </div>
