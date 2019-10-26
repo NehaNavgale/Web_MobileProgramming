@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context="com.example.pizzaOrder.MainActivity"
+    android:background="@drawable/bg7">
+
+    <TextView
+
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nameTxt"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="90dp"
+        android:text="Toppings!"
+        android:textAllCaps="true"
+        android:textColor="@color/colorAccent"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+
+    <CheckBox
+        android:id="@+id/cheese_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_alignLeft="@+id/textView2"
+
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="8dp"
+        android:padding="10dp"
+        android:text="Cheese"
+        android:textSize="15dp" />
+
+    <CheckBox
+        android:id="@+id/olives_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cheese_checkbox"
+        android:layout_alignStart="@+id/cheese_checkbox"
+
+        android:layout_alignLeft="@+id/cheese_checkbox"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:padding="10dp"
+        android:text="Olives"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/olives_checkbox"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="18dp"
+        android:padding="10dp"
+        android:text="Quantity"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/quantityTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_marginStart="21dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="-2dp"
+        android:layout_toEndOf="@+id/textView"
+        android:layout_toRightOf="@+id/textView"
+        android:padding="25dp"
+        android:text="0"
+        android:textSize="40dp" />
+
+    <Button
+        android:id="@+id/decrementBt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/quantityTxt"
+        android:layout_alignEnd="@+id/textView2"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_alignBottom="@+id/quantityTxt"
+        android:layout_marginEnd="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="16dp"
+        android:onClick="decrement"
+        android:text="-"
+        android:textSize="40dp" />
+
+    <Button
+        android:id="@+id/incrementBt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/quantityTxt"
+        android:layout_alignBottom="@+id/quantityTxt"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="16dp"
+        android:layout_toEndOf="@+id/quantityTxt"
+        android:layout_toRightOf="@+id/quantityTxt"
+        android:onClick="increment"
+        android:text="+"
+        android:textSize="40dp" />
+
+    <EditText
+        android:id="@+id/nameTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/decrementBt"
+        android:layout_alignLeft="@+id/decrementBt"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-33dp"
+        android:layout_marginLeft="-33dp"
+        android:layout_marginTop="118dp"
+        android:hint="Enter your Name"
+        android:inputType="textCapWords"
+        android:paddingLeft="25dp" />
+
+
+    <Button
+        android:id="@+id/orderBt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/quantityTxt"
+        android:layout_marginStart="-75dp"
+        android:layout_marginLeft="-75dp"
+        android:layout_marginTop="2dp"
+        android:layout_toEndOf="@+id/decrementBt"
+        android:layout_toRightOf="@+id/decrementBt"
+        android:onClick="onlyOrder"
+        android:text="Order" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/quantityTxt"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="94dp"
+        android:layout_marginRight="94dp"
+        android:onClick="orderButton"
+        android:text="Summary" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+
+        android:background="@drawable/bg3"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="170dp"
+        android:layout_marginEnd="94dp"
+        android:layout_marginRight="94dp"
+        android:text="SELECT PIZZA"
+        android:textColor="@color/colorAccent"
+        android:textSize="15dp"
+        android:textStyle="bold"/>
+    <CheckBox
+        android:id="@+id/pizza1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="185dp"
+        android:padding="10dp"
+        android:text="Large"
+        android:textSize="15dp" />
+
+    <CheckBox
+        android:id="@+id/pizza2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="205dp"
+        android:padding="10dp"
+        android:text="Regular"
+        android:textSize="15dp" />
+
+
+</RelativeLayout>
