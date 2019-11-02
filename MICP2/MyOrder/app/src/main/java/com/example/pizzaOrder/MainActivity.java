@@ -45,8 +45,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public String createFinalMessage(String names,Boolean Reg, Boolean large, Boolean cheese, Boolean olives,int price) {
-        String Message = "\n Dear "+names+"\n"+"Please check your order before proceeding \nPizza Size : \n"+"Selected Large : "+large+
-                "\n"+"Selected Regular : "+Reg+"\n"+"Toppings \n"+"Cheese :"+cheese+"\nOlives :"+olives+"\nQuantity :"+ quantity +"\n Total Price $: "+price;
+        String Message = "\nDear "+names+"\n"+"Please check your order before proceeding \nPizza Size : \n"+"Selected Large : "+large+
+                "\n"+"Selected Regular : "+Reg+"\n"+"Toppings \n"+"Cheese :"+cheese+"\nOlives :"+olives+"\nQuantity :"+ quantity +"\nTotal Price $: "+price;
         return  Message;
 
 
@@ -92,18 +92,17 @@ public class MainActivity extends AppCompatActivity {
         displayMessage(finalMessage);
     }
 
-    public void sendEmail(String output) {
-        // Write the relevant code for triggering email
-
-        // Hint to accomplish the task
-
-        /*Intent intent = new Intent(Intent.ACTION_VIEW);
-        if (intent.resolveActivity(getPackageManager()) !=null){
-            startActivity(intent);
-        }*/
-
-
-    }
+//    public void sendEmail(String output) {
+//        // Write the relevant code for triggering email
+//
+//        // Hint to accomplish the task
+//
+//        /*Intent intent = new Intent(Intent.ACTION_VIEW);
+//        if (intent.resolveActivity(getPackageManager()) !=null){
+//            startActivity(intent);
+//        }*/
+//
+//    }
     public void onlyOrder(View view)
     {
         EditText name = (EditText) findViewById(R.id.nameTxt);
